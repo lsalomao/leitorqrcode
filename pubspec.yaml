@@ -30,6 +30,9 @@ dependencies:
   cupertino_icons: ^0.1.3
   barcode_scan: ^3.0.1
   url_launcher: ^5.5.0
+  appcenter:
+  appcenter_crashes:
+  appcenter_analytics: 
 
 dev_dependencies:
   flutter_test:
