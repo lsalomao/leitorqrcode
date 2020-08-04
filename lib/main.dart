@@ -1,6 +1,3 @@
-import 'package:appcenter/appcenter.dart';
-import 'package:appcenter_analytics/appcenter_analytics.dart';
-import 'package:appcenter_crashes/appcenter_crashes.dart';
 import 'package:barcode_scan/barcode_scan.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -38,10 +35,10 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   String resultado = "";
 
-  void initAppCenter() async {
-    var appSecret = "83709946-de6a-418f-b482-21151ce17c7f";
-    await AppCenter.start(appSecret, [AppCenterAnalytics.id, AppCenterCrashes.id]);
-  }
+  // void initAppCenter() async {
+  //   var appSecret = "83709946-de6a-418f-b482-21151ce17c7f";
+  //   await AppCenter.start(appSecret, [AppCenterAnalytics.id, AppCenterCrashes.id]);
+  // }
 
   Future<void> _scanQrCode() async {
     final result = await BarcodeScanner.scan();
